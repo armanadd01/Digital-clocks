@@ -1,12 +1,43 @@
 .digital-clock {
     height: 100vh;
 }
-/* .clock {
-    text-align: center;
-    margin-top: 100px;
-} */
+ .clock h1{
+    font-size: 60px;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+} 
 
 #time {
     font-size: 10rem;
-    text-shadow: 0px 3px 8px rgba(14, 190, 225, 0.45);
+    text-shadow: 5px 5px 8px rgba(14, 190, 225, 0.45);
+    font-family: 'Oxanium', cursive;
+}
+
+
+@media all and (max-width: 991px) {
+
+
+    .clock h1 {
+        font-size: 45px;
+        padding-bottom: 1rem;
+    }
+
+    #time {
+        font-size: 5rem;
+
+    }
+}
+
+@media all and (max-width: 767px) {
+    .digital-clock {
+            padding: 10px;
+        }
+    .clock h1 {
+            font-size: 40px; 
+            padding-bottom: 1rem;
+    }
+    #time {
+            font-size: 4rem;
+            
+        }
 }
